@@ -6,20 +6,15 @@ This project involves forecasting using three distinct methods: ARIMA (a statist
 
 ARIMA is based on the assumption of stationarity in the time series and constant error variance. The model uses past signals of the series to make forecasts, including autoregression (AR) and moving average (MA) components. Most time series exhibit trends, necessitating differencing to achieve stationarity. The model is thus specified by three parameters ARIMA(p, d, q), where 'd' denotes the differencing order. In cases where seasonality is present, Seasonal ARIMA (SARIMA) models are employed.
 
-### Model Specification and Results:
+### Model Specification:
 - **Model**: ARIMA(0,0,0)(0,1,1)[7]
 - **Auto-ARIMA Result**: ARIMA(0,0,0)(0,1,1)[7]
-- **RMSE**: 1,173,545.3553
 
 Despite multiple seasonal differencing attempts, the ARIMA model suffered from significant white noise, indicating high randomness in the data. Consequently, alternative methods such as XGBoost and LSTM were explored.
 
 ## 2. XGBoost (Extreme Gradient Boosting)
 
 XGBoost is a robust machine learning method known for its efficiency and performance.
-
-### Results:
-- **RMSE before tuning**: 886,354.93
-- **RMSE after tuning with Random Search**: 732,803.88
 
 ## 3. LSTM (Long Short-Term Memory)
 
