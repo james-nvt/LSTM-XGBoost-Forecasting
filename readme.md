@@ -20,8 +20,6 @@ XGBoost is a robust machine learning method known for its efficiency and perform
 
 LSTM is a type of recurrent neural network capable of capturing long-term dependencies and trends in time series data.
 
-### Results:
-- **RMSE**: 1,011,808.56
 
 Although the RMSE for LSTM is higher compared to XGBoost, LSTM demonstrated superior adherence to seasonal patterns in the data. The higher RMSE can be attributed to two primary factors:
 1. Limited training resources, resulting in underfitting due to insufficient epochs.
